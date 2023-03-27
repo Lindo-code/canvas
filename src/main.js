@@ -9,6 +9,7 @@ const {
   showAll,
   homePage,
   contactPage,
+  portfolioPage,
 } = require("./utils/helper-functions");
 const elements = require("./dom_elements");
 

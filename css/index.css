@@ -116,7 +116,7 @@ h5 {
   height: 105px;
 }
 
-.project-img {
+.svg-img {
   width: 30vw;
   height: 21vw;
   border-radius: 10px;
@@ -205,7 +205,7 @@ input[type="checkbox"]:checked + label:before {
   display: flex;
   justify-content: space-between;
 }
-.img-text {
+.image-text {
   opacity: 0;
   display: flex;
   justify-content: space-between;
@@ -275,6 +275,8 @@ nav {
 
 /*| CURRENT & COMPLETED PROJECTS|*/
 .projects-container {
+  opacity: 0;
+  display: block;
   background-color: #ffdead;
   border-radius: 15px;
   margin: 5em;
@@ -455,8 +457,7 @@ a:hover {
   .text-underline-long {
     margin-top: 6em;
   }
-  .img-text {
-    opacity: 0;
+  .image-text {
     margin-top: 6em;
   }
 }
@@ -492,14 +493,14 @@ a:hover {
     margin: 40px 20% 0 20%;
     transition: all 0.5s ease;
   }
-  .project-img {
+  .svg-img {
     width: 60vw;
     height: 40vw;
   }
   .project-link {
     font-size: 0.7rem;
   }
-  .img-text {
+  .image-text {
     opacity: 0;
     justify-content: center;
     align-items: center;
@@ -512,6 +513,7 @@ a:hover {
     padding: 0 1vw 0 1vw;
   }
   .projects-container {
+    display: block;
     margin: 1em;
     padding: 0;
   }

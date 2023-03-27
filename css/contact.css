@@ -417,7 +417,7 @@ a:hover {
   .text-underline-long {
     margin-top: 6em;
   }
-  .img-text {
+  .image-text {
     margin-top: 6em;
   }
 }
@@ -456,7 +456,8 @@ a:hover {
   .project-link {
     font-size: 0.7rem;
   }
-  .img-text {
+  .image-text {
+    opacity: 0;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -468,6 +469,7 @@ a:hover {
     padding: 0 1vw 0 1vw;
   }
   .projects-container {
+    display: block;
     margin: 1em;
     padding: 0;
   }
