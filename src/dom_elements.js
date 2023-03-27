@@ -9,5 +9,6 @@ module.exports = {
   imageLinks: document.querySelectorAll("#link"),
   textLinks: document.querySelectorAll("#text-link"),
   show: document.querySelectorAll(".appear"),
-  divs: document.querySelectorAll(".empty-div"), 
+  divs: document.querySelectorAll(".empty-div"),
+  content: document.querySelector(".content"), 
 };

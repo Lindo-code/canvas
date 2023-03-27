@@ -47,7 +47,7 @@ html,body {
   font-family: 'Kumbh Sans',sans-serif;
 }
 
-.project-details {
+.all-project-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,7 +71,9 @@ h4 {
   font-family: 'Kumbh Sans',sans-serif;
   text-align: center;
 }
-
+h4.color {
+  color: black;
+}
 h5 {
   font-family: 'Kumbh Sans',sans-serif;
   text-align: center;
@@ -280,6 +282,7 @@ nav {
 /*| CURRENT & COMPLETED PROJECTS|*/
 .projects-container {
   opacity: 0;
+  display: block;
   background-color: #ffdead;
   border-radius: 15px;
   margin: 5em;
@@ -487,6 +490,7 @@ a:hover {
     padding: 0 1vw 0 1vw;
   }
   .projects-container {
+    display: block;
     margin: 1em;
     padding: 0;
   }
