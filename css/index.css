@@ -548,9 +548,11 @@ a:hover {
   width: 100%;
   height: 100%;
   text-align: center;
-  -webkit-transition: transform 2s;;
+  -moz-transition: transform 2s;
+  -webkit-transition: transform 2s;
   transition: transform 2s;
-  -webkit-transform-style: preserve-3d;;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
@@ -564,6 +566,7 @@ a:hover {
   position: absolute;
   width: 100%;
   height: 100%;
+  -moz-backface-visibility: hidden; /* Mozilla */
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
@@ -585,25 +588,30 @@ a:hover {
 }
 
 .top-image-container.bounce-in-top {
+  -moz-animation: bounce-in-top 2s ease forwards;
   -webkit-animation: bounce-in-top 2s ease forwards;
   animation: bounce-in-top 2s ease forwards;
 }
 @keyframes bounce-in-top {
   0% {
     opacity: 0;
+    -moz-transform: translateY(-2000px);
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
   60% {
+    -moz-transform: translateY(30px);
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
   80% {
+    -moz-transform: translateY(-10px);
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
   100% {
     opacity: 1;
+    -moz-transform: translateY(0);
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -612,17 +620,20 @@ a:hover {
 	60% {transform: translateY(-15px);} */
 }
 .top-image-container.bounce-out-top {
+  -moz-animation: bounce-out-top 2s ease forwards;
   -webkit-animation: bounce-out-top 2s ease forwards;
   animation: bounce-out-top 2s ease forwards;
 }
 @keyframes bounce-out-top {
   0% {
     opacity: 1;
+    -moz-transform: translateY(0);
     -webkit-transform: translateY(0);
     transform: translateY();
   }
   100% {
     opacity: 0;
+    -moz-transform: translateY(-2000px);
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
@@ -631,25 +642,30 @@ a:hover {
 	60% {transform: translateY(-15px);} */
 }
 .title.bounce-in-left {
+  -moz-animation: bounce-in-left 2s ease forwards;
   -webkit-animation: bounce-in-left 2s ease forwards;
   animation: bounce-in-left 2s ease forwards;
 }
 @keyframes bounce-in-left {
   0% {
     opacity: 0;
+    -moz-transform: translateX(-2000px);
     -webkit-transform: translateX(-2000px);
     transform: translateX(-2000px);
   }
   60% {
     opacity: 1;
+    -moz-transform: translateX(30px);
     -webkit-transform: translateX(30px);
     transform: translateX(30px);
   }
   80% {
+    -moz-transform: translateX(-10px);
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
   100% {
+    -moz-transform: translateX(0);
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
@@ -657,24 +673,29 @@ a:hover {
 
 .nav-bar.bounce-in-right {
   -webkit-animation: bounce-in-right 2s ease forwards;
+  -webkit-animation: bounce-in-right 2s ease forwards;
   animation: bounce-in-right 2s ease forwards;
 }
 @keyframes bounce-in-right {
   0% {
     opacity: 0;
+    -moz-transform: translateX(2000px);
     -webkit-transform: translateX(2000px);
     transform: translateX(2000px);
   }
   60% {
     opacity: 1;
+    -moz-transform: translateX(-30px);
     -webkit-transform: translateX(-30px);
     transform: translateX(-30px);
   }
   80% {
+    -moz-transform: translateX(10px);
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
   100% {
+    -moz-transform: translateX(0);
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
